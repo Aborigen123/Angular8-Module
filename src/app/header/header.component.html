@@ -1,0 +1,12 @@
+<div class="container">
+    <nav style="margin-bottom: 20px;" class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active" ><a routerLink="/">Main</a></li><!--перевіряє чи наш url і якщо вони співпадають то сторінка не перезагружається-->
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="'/cars'">Car</a></li>  <!--  [routerLinkActiveOptions]="{exact: true} - він буде працювати тоді коли роут = "/"-->
+          <li ><a routerLink="/new">New</a></li>
+        </ul>
+      </div>
+     </nav>
+     </div>
+     
